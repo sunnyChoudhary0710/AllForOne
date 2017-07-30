@@ -1,4 +1,4 @@
-var OneForAll = angular.module('OneForAll', ['ionic'])
+var OneForAll = angular.module('OneForAll', ['ionic', 'ngMaterial'])
 
 OneForAll.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -27,6 +27,10 @@ OneForAll.config(function($stateProvider,$urlRouterProvider){
     url: '/home',
     templateUrl: 'appComponents/slider/home.html',
     controller: 'HomeController'
+  }).state('signUp', {
+    url: '/signUp',
+    templateUrl: 'appComponents/signUp/signUp.html',
+    controller: 'SignUpController'
   })
 
   $urlRouterProvider.otherwise('/');
