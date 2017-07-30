@@ -1,7 +1,7 @@
-OneForAll.controller('MainController', function($scope, $state) {
-  console.log('MainController');
+OneForAll.controller('HomeController', function($scope, $state) {
+  console.log('HomeController');
   
   $scope.toIntro = function(){
     $state.go('intro');
   }
-});
+}); 

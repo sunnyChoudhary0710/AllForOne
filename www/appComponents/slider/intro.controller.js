@@ -2,7 +2,7 @@ OneForAll.controller('IntroController', function($scope, $state, $ionicSlideBoxD
  
   // Called to navigate to the main app
   $scope.startApp = function() {
-    $state.go('main');
+    $state.go('home');
   };
   $scope.next = function() {
     $ionicSlideBoxDelegate.next();
