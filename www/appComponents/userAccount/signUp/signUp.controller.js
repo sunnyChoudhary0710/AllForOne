@@ -1,7 +1,7 @@
 OneForAll.controller('SignUpController', function($scope, $state) {
   console.log('SignUpController');
   
-  $scope.signUp = function(){
+  $scope.signIn = function(){
     $state.go('intro');
   }
 });

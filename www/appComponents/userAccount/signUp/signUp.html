@@ -5,21 +5,21 @@
         <form name="authorizationForm" novalidate="" ng-submit="signIn(authorizationForm)">
             <div class="list">
 
-            <label class="item item-input" ng-class="{ 'has-errors' : authorizationForm.firstname.$invalid, 'no-errors' : authorizationForm.firstname.$valid}">
-              <span class="input-label">First Name</span>
+            <label class="item item-input item-floating-label" ng-class="{ 'has-errors' : authorizationForm.firstname.$invalid, 'no-errors' : authorizationForm.firstname.$valid}">
+              <span class="input-label item-floating-label">First Name</span>
               <input type="text" name="firstname" ng-model="authorization.firstname" ng-minlength="5" ng-maxlength="20" required>
             </label>
 
-            <label class="item item-input" ng-class="{ 'has-errors' : authorizationForm.lastname.$invalid, 'no-errors' : authorizationForm.lastname.$valid}">
+            <label class="item item-input item-floating-label" ng-class="{ 'has-errors' : authorizationForm.lastname.$invalid, 'no-errors' : authorizationForm.lastname.$valid}">
               <span class="input-label">Last Name</span>
               <input type="text" name="lastname" ng-model="authorization.lastname" ng-minlength="5" ng-maxlength="20" required>
             </label>
              
             <div class="error-container" ng-show="authorizationForm.fullname.$error" ng-messages="authorizationForm.fullname.$error">
-              <div ng-messages-include="error-list.html"></div>
+              <div ng-messages-include="../error-list.html"></div>
             </div>
              
-            <label class="item item-input" ng-class="{ 'has-errors' : authorizationForm.password.$invalid && authorizationForm.$submitted, 'no-errors' : authorizationForm.password.$valid  && authorizationForm.$submitted}">
+            <label class="item item-input item-floating-label" ng-class="{ 'has-errors' : authorizationForm.password.$invalid && authorizationForm.$submitted, 'no-errors' : authorizationForm.password.$valid  && authorizationForm.$submitted}">
               <span class="input-label">Password</span>
               <input type="password" name="password" ng-model="authorization.password" ng-minlength="5" ng-maxlength="20" required>
             </label>
